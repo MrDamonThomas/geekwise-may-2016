@@ -40,6 +40,26 @@ a:hover {
     color:#AEAEAE;
 }
 
+figure {
+    padding:25px;
+    background-color:#BDFFA1;
+    display: inline-block;
+    border-radius:6px;
+    /*box-shadow:5px 5px 5px #000000;*/
+}
+
+figcaption {
+    text-align: center;
+    font-size:1.25em;
+    color:#000000;
+}
+
+main {
+    width:1200px;
+    margin:20px auto;
+    overflow:hidden;
+}
+
 /* ============= HEADER STYLES ============== */
 
 
@@ -50,6 +70,9 @@ header {
 
 #logo {
     color:#AEAEAE;
+    position:relative;
+    top:20px;
+    left:20px;
 }
 #logo:hover {
     color:#FF7900;
@@ -70,13 +93,70 @@ header {
     color:#FFFFFF;
     font-size:6em;
     text-align:center;
-    text-shadow:6px 6px #000000;
+    text-shadow:6px 6px 6px #000000;
 }
 
+/* ============== NAVIGATION STYLES ============== */
 
+#menu {
+    position:absolute;
+    top:23px;
+    right:20px;
+}
 
+#menu ul li {
+    /*display: inline;*/
+    display:inline-block;
+    margin:0px 12px;
+}
 
+.currentPage {
+    color:#AEAEAE;
+}
 
+/* ================= THREE COLUMNS STYLES ============= */
 
+.columnA, .columnB, .columnC {
+    width:384px;
+}
 
+.columnA, .columnB {
+    float:left;
+    margin-right:24px;
+}
 
+.columnC {
+    float:left;
+    /*border:solid 1px #000000;*/
+}
+
+.columnA h2, .columnB h2, .columnC h2 {
+    font-size:3.5em;
+    font-weight:700;
+    text-align:center;
+    margin:15px 0px;
+    /*?????*/
+}
+
+.columnA p, .columnB p, .columnC p {
+    padding:0px;
+    text-align: justify;
+}
+
+.columnA span, .columnB span, .columnC span {
+    background-color:#FF7900;
+    color:#FFFFFF;
+    display:block;
+    font-size:2.75em;
+    font-weight:600;
+    text-align:center;
+    padding:15px 0px;
+}
+
+/*
+1200px width of our main tag
+384px x 3 = 1152px
+24px x 2 = 48px
+
+total 1200px
+*/
